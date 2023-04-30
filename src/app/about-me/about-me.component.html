@@ -1,0 +1,49 @@
+<div class="w-100 row">
+  <div class="text col-md-8 col-12 center-content">
+    <div class="card w-100 center-content" style="height: 100px; border: none">
+      <div class="content-row" style="font-size: xx-large">Hi, I'm</div>
+      <ng-container [ngSwitch]="count">
+        <!-- the same view can be shown in more than one case -->
+        <ng-container *ngSwitchCase=1>
+          <div class="">
+            <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
+              Rahal Danthanarayana
+            </span>
+          </div>
+        </ng-container>
+        <ng-container *ngSwitchCase=2>
+          <div class="">
+            <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
+            A Full-stack Developer
+            </span>
+          </div>
+        </ng-container>
+        <div *ngSwitchCase=3>
+          <div class="">
+            <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
+            A Cloud Engineer
+            </span>
+          </div>
+        </div>
+        <div *ngSwitchCase=4>
+          <div class="">
+            <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
+            A Data Analyst
+            </span>
+          </div>
+        </div>
+        <div *ngSwitchCase=5>
+          <div class="">
+            <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
+            A Mobile App developer
+            </span>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="image col-md-4 col-12">
+    <img src="../../assets/my_pic.jpg" alt="my_pic" height="500px">
+  </div>
+</div>
+
