@@ -1,0 +1,16 @@
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.animation-text {
+  left-margin: 5px;
+  font-size: xx-large;
+  font-weight: bold;
+}
