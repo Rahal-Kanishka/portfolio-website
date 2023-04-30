@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { TypingAnimationModule } from "angular-typing-animation";
+import { CertificationsComponent } from './certifications/certifications.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    CertificationsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
