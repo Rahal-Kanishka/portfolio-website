@@ -1,0 +1,42 @@
+.card-detail {
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: darkgray;
+  border-block-style: outset;
+  margin: 1px;
+}
+
+.spread {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.image-logo {
+  height: 80px;
+  padding-top: 17px;
+}
+
+
+// make text smaller with smaller screen
+@media screen and (max-width: 370px) {
+  .card-text {
+    font-size: 17px;
+  }
+
+  .image-logo {
+    height: 20px;
+
+    padding-top: 2px;
+  }
+}
+
