@@ -1,0 +1,28 @@
+
+<div class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-brand" (click)="scroll(target)">About Me</button>
+  <button class="navbar-brand" (click)="scroll(experience)">Experience</button>
+  <button class="navbar-brand" (click)="scroll(portfolio)">Portfolio</button>
+  <button class="navbar-brand" (click)="scroll(certifications)">Certifications</button>
+</div>
+
+<div #target class="card" style="margin-top: 50px;">
+  <h1>About Me</h1>
+  <app-about-me></app-about-me>
+</div>
+
+
+<div #experience class="card">
+  <h1>Experience</h1>
+</div>
+
+<div #portfolio class="card">
+  <h1>Portfolio</h1>
+</div>
+
+<div #certifications class="card">
+  <h1>Certifications</h1>
+</div>
+
+
+<router-outlet></router-outlet>
