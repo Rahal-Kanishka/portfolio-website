@@ -36,14 +36,26 @@ export class ExperienceComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    if (window.scrollY > 100) {
-      this.movement = 'enter'
-    } else {
-      this.movement = 'leave'
-    }
+    if (window.innerWidth > 700) {
+      if (window.scrollY > 70) {
+        this.movement = 'enter'
+      } else {
+        this.movement = 'leave'
+      }
 
-    if (window.scrollY > 1000) {
-      this.movement = 'leave'
+      if (window.scrollY > 1000 || window.scrollY < 120) {
+        this.movement = 'leave'
+      }
+    } else {
+      if (window.scrollY > 100) {
+        this.movement = 'enter'
+      } else {
+        this.movement = 'leave'
+      }
+
+      if (window.scrollY > 400) {
+        this.movement = 'leave'
+      }
     }
     console.log('scroll: ', window.scrollY);
   }
