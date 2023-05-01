@@ -1,7 +1,7 @@
 <div class="spread">
 
   <div class="col-12 col-md-5">
-    <div class="experience-card">
+    <div class="experience-card" [@workListAnimation] = "movement">
       <div class="work-card" [ngStyle]="{'background-color': selected == 1 ? 'darkgray' : null}"
            (click)="selected = 1">
         <div class="">12/2022 - Present</div>
