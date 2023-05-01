@@ -3,13 +3,14 @@
   margin-right: 5px;
   border-left: solid;
   padding-left: 5px;
-  padding-right: 10px
+  padding-right: 10px;
+  margin-bottom: 15px;
 }
 
 .work-card {
   margin-left: 10px;
-  border: solid;
-  border-radius: 8px;
+  border-bottom: solid rgba(28, 13, 26, 0.38);
+  border-radius: 3px;
   padding: 5px;
   margin-top: 5px;
 }
@@ -31,6 +32,10 @@
   padding-top: 17px;
 }
 
+.work-card:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
 
 // make text smaller with smaller screen
 @media screen and (max-width: 370px) {
@@ -46,5 +51,22 @@
   .work-card {
     margin-left: 0px;
   }
+}
+
+.badge-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10px
+}
+
+.work-badge {
+  border: ridge #e6e6e6;
+  border-radius: 15px;
+  padding: 6px;
+  background-color: #e8e4e4;
+  margin-left: 3px;
+  margin-bottom: 5px;
 }
 

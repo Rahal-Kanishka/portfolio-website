@@ -1,31 +1,126 @@
-<div class="experience-card">
+<div class="spread">
 
-  <div class="work-card col-12 col-md-4">
-    <div class="">12/2022 - Present</div>
-    <div class="">Associate Tech Lead</div>
-    <div class="">Softcodeit Solutions (Pvt) LTD</div>
-  </div>
-  <div class="work-card col-12 col-md-4">
-    <div class="">10/2020 - 12/2022</div>
-    <div class="">Software Engineer</div>
-    <div class="">Softcodeit Solutions (Pvt) LTD</div>
-  </div>
-  <div class="work-card col-12 col-md-4">
-    <div class="">10/2019 - 10/2020</div>
-    <div class="">Senior Software Engineer</div>
-    <div class="">Codegen International (Pvt) LTD</div>
-  </div>
-  <div class="work-card col-12 col-md-4">
-    <div class="">06/2017 - 10/2019/</div>
-    <div class="">Software Engineer</div>
-    <div class="">Global Trading Network</div>
-  </div>
-  <div class="work-card col-12 col-md-4">
-    <div class="">03/2014 - 09/2014</div>
-    <div class="">Software Engineer Trainee</div>
-    <div class="">Codegen International (Pvt) LTD</div>
-    <div class="">
-      <p>&#9642; sis something</p>
+  <div class="col-12 col-md-5">
+    <div class="experience-card">
+      <div class="work-card" [ngStyle]="{'background-color': selected == 1 ? 'darkgray' : null}"
+           (click)="selected = 1">
+        <div class="">12/2022 - Present</div>
+        <div class="">Associate Tech Lead</div>
+        <div class="">Softcodeit Solutions (Pvt) LTD</div>
+      </div>
+      <div class="work-card" (click)="selected = 2" [ngStyle]="{'background-color': selected == 2 ? 'darkgray' : null}">
+        <div class="">10/2020 - 12/2022</div>
+        <div class="">Software Engineer</div>
+        <div class="">Softcodeit Solutions (Pvt) LTD</div>
+      </div>
+      <div class="work-card" (click)="selected = 3" [ngStyle]="{'background-color': selected == 3 ? 'darkgray' : null}">
+        <div class="">10/2019 - 10/2020</div>
+        <div class="">Senior Software Engineer</div>
+        <div class="">Codegen International (Pvt) LTD</div>
+      </div>
+      <div class="work-card" (click)="selected = 4" [ngStyle]="{'background-color': selected == 4 ? 'darkgray' : null}">
+        <div class="">06/2017 - 10/2019</div>
+        <div class="">Software Engineer</div>
+        <div class="">Global Trading Network</div>
+      </div>
+      <div class="work-card" (click)="selected = 5" [ngStyle]="{'background-color': selected == 5 ? 'darkgray' : null}">
+        <div class="">03/2014 - 09/2014</div>
+        <div class="">Software Engineer Trainee</div>
+        <div class="">Codegen International (Pvt) LTD</div>
+      </div>
     </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <ng-container [ngSwitch]="selected">
+      <ng-container *ngSwitchCase=1>
+        <div class="atl">
+          <div class="badge-row" >
+            <span class="work-badge">Angular</span>
+            <span class="work-badge">Spring-Boot</span>
+            <span class="work-badge">MySql</span>
+            <span class="work-badge">EmberJs</span>
+            <span class="work-badge">Ubuntu</span>
+            <span class="work-badge">MacOs</span>
+            <span class="work-badge">Unit Testing</span>
+            <span class="work-badge">Mentoring</span>
+          </div>
+          <p>&#9642; Implemented an online marketplace specialized in security products
+            with Stripe payment capabilities using Angular 11, PrimeNG,
+            Chart.js, Spring Boot and MySQL </p>
+          <p>&#9642; DB patching using Rails Active Record Migration </p>
+          <p>&#9642; Performed unit Testing using Jasmine and Karma</p>
+          <p>&#9642; Mentored new team members</p>
+        </div>
+      </ng-container>
+      <ng-container *ngSwitchCase=2>
+        <div class="badge-row" >
+          <span class="work-badge">Angular</span>
+          <span class="work-badge">EmberJs</span>
+          <span class="work-badge">EmberJs</span>
+          <span class="work-badge">Spring-Boot</span>
+          <span class="work-badge">MySql</span>
+          <span class="work-badge">EmberJs</span>
+          <span class="work-badge">Unit Testing</span>
+          <span class="work-badge">Mentoring</span>
+        </div>
+        <p>&#9642; Conversion of EmberJs App to an Angular App using Lazy-loading feature modules</p>
+        <p>&#9642; DB migration From Postgres to Mysql</p>
+        <p>&#9642; Mentored new team members</p>
+      </ng-container>
+      <ng-container *ngSwitchCase=3>
+        <div class="badge-row">
+          <span class="work-badge">Material</span>
+          <span class="work-badge">Angular</span>
+          <span class="work-badge">Unit Testing</span>
+          <span class="work-badge">Windows</span>
+          <span class="work-badge">Selenium</span>
+          <span class="work-badge">Logstash</span>
+          <span class="work-badge">Jenkins</span>
+          <span class="work-badge">SonarQube</span>
+        </div>
+        <div class="se">
+          <p>&#9642; Built a website for a hotel recommendation system using Angular 9, HTML, CSS, Java </p>
+          <p>&#9642; Web crawling to fetch hotel recommendation data using JSoup, Selenium </p>
+          <p>&#9642; Built a data pipeline to store that data using Logstash, Jenkins and ElastiCache </p>
+          <p>&#9642; Performed unit testing using Jasmine and Karma </p>
+          <p>&#9642; Front-end code evaluation using SonarQube </p>
+        </div>
+      </ng-container>
+      <ng-container *ngSwitchCase=4>
+        <div class=""> <!--GTN-->
+          <div class="badge-row">
+            <span class="work-badge">Encryption</span>
+            <span class="work-badge">TLS1.3</span>
+            <span class="work-badge">Angular</span>
+            <span class="work-badge">Spring-Boot</span>
+            <span class="work-badge">Oracle</span>
+            <span class="work-badge">Server Deployment</span>
+            <span class="work-badge">CentOS 7</span>
+            <span class="work-badge">Ubuntu</span>
+            <span class="work-badge">Windows</span>
+          </div>
+          <p>&#9642; Implemented an investment portfolio management platform using Angular 9, ChartJs, HTML, SCSS, Spring boot </p>
+          <p>&#9642; Implemented automated, dynamic report generation using Jasper Reports, Java, JBoss, Oracle DB </p>
+          <p>&#9642; Automated testing and documentation by writing integrations with TestLink using Cucumber and Java </p>
+          <p>&#9642; upgrade from TLS 1.2 to TLS 1.3 </p>
+          <p>&#9642; Implementation of end-to-end encryption communication protocols</p>
+          <p>&#9642; introducing hashing mechanism to the REST calls between the Angular client and the backend</p>
+
+        </div>
+      </ng-container>
+      <ng-container *ngSwitchCase=5>
+        <div class="badge-row">
+          <span class="work-badge">Material</span>
+          <span class="work-badge">Angular</span>
+          <span class="work-badge">Unit Testing</span>
+          <span class="work-badge">Windows</span>
+        </div>
+        <div class="">
+          <p>&#9642; Built a module for a ticket booking and hotel reservations system using Angular 9, HTML, CSS </p>
+          <p>&#9642; RND on Unit Testing using Jasmine and Karma </p>
+        </div>
+      </ng-container>
+
+    </ng-container>
   </div>
 </div>
