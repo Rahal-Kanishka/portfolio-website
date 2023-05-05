@@ -1,7 +1,16 @@
-.center-content {
+.heading-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: space-around;
+  flex-direction: column;
+  min-width: 50vw;
+  height: 97vh;
+}
+
+.heading-image {
+  object-fit: contain;
+  height: 500px;
 }
 
 .content-row {
@@ -11,6 +20,20 @@
 
 .animation-text {
   left-margin: 5px;
-  font-size: xx-large;
+  font-size: 300%;
   font-weight: bold;
+}
+
+.image {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.general-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

@@ -6,25 +6,26 @@
   <button class="" (click)="scroll(certifications)">Certifications</button>
 </div>
 
-<div #target class="card" style="margin-top: 50px;">
-  <h1>About Me</h1>
+<section #target class="hidden">
   <app-about-me></app-about-me>
-</div>
+</section>
 
 
-<div #experience class="">
+<section #experience class="hidden" id="experience" >
   <h1>Experience</h1>
   <app-experience></app-experience>
-</div>
+</section>
 
-<div #portfolio class="card">
-  <h1>Portfolio</h1>
-</div>
 
-<div #certifications class="card">
+
+<section #portfolio class="hidden" id="portfolio" >
+  <h2>portfolio</h2>
+</section>
+
+<section #certifications class="hidden">
   <h1>Certifications</h1>
   <app-certifications></app-certifications>
-</div>
+</section>
 
 
 <router-outlet></router-outlet>

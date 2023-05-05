@@ -1,12 +1,12 @@
-<div class="w-100 row">
-  <div class="text col-md-8 col-12 center-content">
-    <div class="card w-100 center-content" style="height: 100px; border: none">
+<div class="general-row no-gutters">
+  <div class="col-md-7 col-sm-12 col-12 heading-section">
+    <div class="heading-section" style="border: none">
       <div class="content-row" style="font-size: xx-large">Hi, I'm</div>
       <ng-container [ngSwitch]="count">
         <!-- the same view can be shown in more than one case -->
         <ng-container *ngSwitchCase=1>
           <div class="">
-            <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
+            <span class="animation-text" style="font-family: Courgette, arial" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
               Rahal Danthanarayana
             </span>
           </div>
@@ -42,8 +42,8 @@
       </ng-container>
     </div>
   </div>
-  <div class="image col-md-4 col-12">
-    <img src="../../assets/my_pic.jpg" alt="my_pic" height="500px">
+  <div class="image col-md-3 col-sm-12 col-12">
+    <img src="../../assets/my_pic_background_edited.png" alt="my_pic" class="heading-image">
   </div>
 </div>
 

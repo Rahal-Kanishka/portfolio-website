@@ -57,7 +57,7 @@ export class ExperienceComponent implements OnInit {
         this.movement = 'leave'
       }
     }
-    console.log('scroll: ', window.scrollY);
+    // console.log('scroll: ', window.scrollY);
   }
 
 }
