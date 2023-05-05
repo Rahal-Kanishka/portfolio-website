@@ -19,8 +19,8 @@ export class AppComponent implements OnInit{
   selectorFunction() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
+          console.log(entry.target.classList)
           entry.target.classList.add('show');
         } else {
           entry.target.classList.remove('show');
@@ -28,6 +28,11 @@ export class AppComponent implements OnInit{
       });
     })
     const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((el) => observer.observe(el))
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    const furtherHiddenElements = document.querySelectorAll('.further-hidden');
+    furtherHiddenElements.forEach((el) => observer.observe(el));
+
+
   }
 }

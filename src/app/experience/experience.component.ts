@@ -5,7 +5,7 @@ const SMALL_DEVICE_WIDTH = 370;
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss'],
+  styleUrls: ['./experience.component.scss', '../app.component.scss'],
   animations: [
     trigger('workListAnimation', [
       state('enter',style({transform: 'translateX(0)'})),
@@ -34,7 +34,7 @@ export class ExperienceComponent implements OnInit {
     console.log('width: ', this.innerWidth);
   }
 
-  @HostListener('window:scroll', ['$event'])
+  /*@HostListener('window:scroll', ['$event'])
   onScroll() {
     if (window.innerWidth > 700) {
       if (window.scrollY > 70) {
@@ -58,6 +58,6 @@ export class ExperienceComponent implements OnInit {
       }
     }
     // console.log('scroll: ', window.scrollY);
-  }
+  }*/
 
 }
