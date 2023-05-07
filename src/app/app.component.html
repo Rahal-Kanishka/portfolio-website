@@ -1,12 +1,12 @@
 
-<div class="nav-bar sticky-top">
-  <button class="" (click)="scroll(target)">About Me</button>
-  <button class="" (click)="scroll(experience)">Experience</button>
-  <button class="" (click)="scroll(portfolio)">Portfolio</button>
-  <button class="" (click)="scroll(certifications)">Certifications</button>
+<div id="top-nav" class="menu-bar  sticky-top">
+  <button class="about-me select" (click)="scroll(target)">About Me</button>
+  <button class="experience" (click)="scroll(experience)">Experience</button>
+  <button class="portfolio" (click)="scroll(portfolio)">Portfolio</button>
+  <button class="certification" (click)="scroll(certifications)">Certifications</button>
 </div>
 
-<section #target class="hidden">
+<section #target class="hidden" id="about-me">
   <app-about-me></app-about-me>
 </section>
 
@@ -22,7 +22,7 @@
   <h2>portfolio</h2>
 </section>
 
-<section #certifications class="hidden">
+<section #certifications class="hidden" id="certification">
   <h1>Certifications</h1>
   <app-certifications></app-certifications>
 </section>

@@ -4,29 +4,31 @@
   justify-content: center;
 }
 
-.nav-bar {
+.menu-bar {
   overflow: hidden;
   background-color: #333;
   top: 0;
   width: 100%;
 }
 
-.nav-bar button {
+button {
+  background: transparent;
+  color: #ddd;
+}
+
+.menu-bar button {
   float: left;
   display: block;
-  color: #f2f2f2;
-  background-color: #333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.nav-bar button:hover {
-  background: #ddd;
+.select {
+  background-color: #ddd;;
   color: black;
 }
-
 
 section {
   display: grid;
@@ -51,8 +53,6 @@ section {
   opacity:  1;
   transform: translateX(0);
 }
-
-
 
 .card-detail:nth-child(1) {
   transition-delay: 200ms;
