@@ -5,10 +5,12 @@
 }
 
 .menu-bar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
   overflow: hidden;
   background-color: #333;
-  top: 0;
-  width: 100%;
 }
 
 button {
@@ -35,7 +37,8 @@ section {
   place-items: center;
   align-items: center;
   min-height: 100vh;
-  margin: 10px;
+  padding: 10px;
+  //margin: 10px;
 }
 
 .hidden {

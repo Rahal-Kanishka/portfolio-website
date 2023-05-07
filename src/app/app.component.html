@@ -1,5 +1,5 @@
 
-<div id="top-nav" class="menu-bar  sticky-top">
+<div id="top-nav" class="menu-bar">
   <button class="about-me select" (click)="scroll(target)">About Me</button>
   <button class="experience" (click)="scroll(experience)">Experience</button>
   <button class="portfolio" (click)="scroll(portfolio)">Portfolio</button>
@@ -11,7 +11,7 @@
 </section>
 
 
-<section #experience class="hidden" id="experience" >
+<section #experience class="hidden" id="experience">
   <h1>Experience</h1>
   <app-experience></app-experience>
 </section>
@@ -20,6 +20,7 @@
 
 <section #portfolio class="hidden" id="portfolio" >
   <h2>portfolio</h2>
+  <app-portfolio></app-portfolio>
 </section>
 
 <section #certifications class="hidden" id="certification">

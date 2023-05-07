@@ -43,7 +43,6 @@ export class AppComponent implements OnInit{
               element => {
                 if (element) {
                   element.classList.remove('select');
-                  console.log('class list: ', element.classList);
                   if (element && element.classList.contains(currentSectionId)) {
                     element.classList.add('select')
                   }
