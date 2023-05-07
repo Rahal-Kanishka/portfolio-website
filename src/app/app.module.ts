@@ -8,13 +8,15 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { TypingAnimationModule } from "angular-typing-animation";
 import { CertificationsComponent } from './certifications/certifications.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
     CertificationsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
