@@ -10,7 +10,7 @@
   top: 0;
   z-index: 1;
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffffff;
 }
 
 button {
@@ -37,8 +37,7 @@ section {
   place-items: center;
   align-items: center;
   min-height: 100vh;
-  padding: 10px;
-  //margin: 10px;
+  margin: 10px;
 }
 
 .hidden {
@@ -65,4 +64,12 @@ section {
 }
 .card-detail:nth-child(3) {
   transition-delay: 800ms;
+}
+
+.nav-button {
+  border-radius: 16px;
+  margin: 8px 5px;
+  border: none;
+  padding: 10px;
+  color: #000000;
 }

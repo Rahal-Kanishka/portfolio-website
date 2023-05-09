@@ -1,9 +1,10 @@
 
 <div id="top-nav" class="menu-bar">
-  <button class="about-me select" (click)="scroll(target)">About Me</button>
-  <button class="experience" (click)="scroll(experience)">Experience</button>
-  <button class="portfolio" (click)="scroll(portfolio)">Portfolio</button>
-  <button class="certification" (click)="scroll(certifications)">Certifications</button>
+  <button class="nav-button about-me select" (click)="scroll(target)">About Me</button>
+  <button class="nav-button experience" (click)="scroll(experience)">Experience</button>
+  <button class="nav-button portfolio" (click)="scroll(portfolio)">Portfolio</button>
+  <button class="nav-button certification" (click)="scroll(certifications)">Certifications</button>
+  <button class="nav-button education" (click)="scroll(education)">Education</button>
 </div>
 
 <section #target class="hidden" id="about-me">
@@ -26,6 +27,11 @@
 <section #certifications class="hidden" id="certification">
   <h1>Certifications</h1>
   <app-certifications></app-certifications>
+</section>
+
+<section #education class="hidden" id="education">
+  <h1>Education</h1>
+  <app-education></app-education>
 </section>
 
 

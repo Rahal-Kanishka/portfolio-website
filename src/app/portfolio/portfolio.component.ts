@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from "@angular/material/dialog";
+import { BusPlatformModalComponent } from "./bus-platform-modal/bus-platform-modal.component";
 
 @Component({
   selector: 'app-portfolio',
@@ -7,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() {
+  constructor(private dialog: MatDialog) {
   }
 
   ngOnInit(): void {
   }
 
   public openProjectDetailModal() {
-    // this.dialog.open(PortforlioDetailModalComponent);
+    this.dialog.open(BusPlatformModalComponent);
 
   }
 
