@@ -9,6 +9,9 @@ import { TypingAnimationModule } from "angular-typing-animation";
 import { CertificationsComponent } from './certifications/certifications.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { MatDialogModule } from "@angular/material/dialog";
+import { BusPlatformModalComponent } from './portfolio/bus-platform-modal/bus-platform-modal.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     AboutMeComponent,
     CertificationsComponent,
     ExperienceComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    BusPlatformModalComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    TypingAnimationModule
+    TypingAnimationModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

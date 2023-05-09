@@ -1,0 +1,21 @@
+.education-icon {
+  font-size: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.edu-card {
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: darkgray;
+  box-shadow: 5px 4px 5px rgba(0,0,0,0.4);
+  margin:  10px;
+  padding: 20px;
+  cursor: pointer;
+  min-width: 25vw;
+}
