@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body { font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+/*html, body { max-width: 100% }*/
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/*defining variables*/
+body {
+  --background-color: white;
+  --card-color: white;
+  --text-color: black;
+  --nav-bar-button-color: #ddd;
+  --nav-bar-text-color: var(--text-color);
+  --transition-delay: 1s ease-out;
+}
+
+body.dark {
+  --background-color: #333;
+  --card-color: #4b5c8c;
+  --text-color: white;
+  --nav-bar-button-color: lightblue;
+  --nav-bar-text-color: lightgrey;
+}
+
+/*assign to property*/
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
