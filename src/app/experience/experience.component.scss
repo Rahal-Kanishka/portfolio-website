@@ -37,6 +37,10 @@
   cursor: pointer;
 }
 
+.exp-desc {
+  text-align: left;
+}
+
 // make text smaller with smaller screen
 @media screen and (max-width: 370px) {
   .card-text {

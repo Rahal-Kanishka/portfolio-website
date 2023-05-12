@@ -15,7 +15,7 @@ body {
   --text-color: black;
   --nav-bar-button-color: #ddd;
   --nav-bar-text-color: var(--text-color);
-  --transition-delay: 1s ease-out;
+  --transition-delay: 1s ease;
 }
 
 body.dark {

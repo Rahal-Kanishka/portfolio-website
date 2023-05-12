@@ -18,3 +18,17 @@
   padding: 20px;
   min-width: 25vw;
 }
+
+.edu-card-list {
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: darkgray;
+  box-shadow: 5px 4px 5px rgba(0,0,0,0.4);
+  margin:  10px;
+  padding: 20px;
+  min-width: 25vw;
+  text-align: start;
+}

@@ -71,6 +71,7 @@ section {
   display: grid;
   place-items: center;
   align-items: center;
+  text-align: center;
   min-height: 100vh;
   margin: 0 10px;
   scroll-margin-top: 80px;
@@ -110,6 +111,30 @@ section {
   color: var(--nav-bar-text-color);
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icon {
+  font-size: 35px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
 
 // to handle space issue when screen size is small
 @media screen and (max-width: 400px) {
