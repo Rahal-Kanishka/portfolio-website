@@ -10,7 +10,26 @@
   top: 0;
   z-index: 1;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--background-color);
+  transition-delay: var(--transition-delay);
+  display: flex;
+  justify-content: space-between;
+}
+
+.sun, .moon {
+  height:  50px;
+  margin: 10px 20px 0 0;
+  fill: var(--text-color);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.moon:hover {
+  transform: scale(1.1);
+}
+
+.sun:hover {
+  transform: scale(1.1);
 }
 
 button {
@@ -25,11 +44,17 @@ button {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition-delay: var(--transition-delay);
 }
 
 .select {
   background-color: #ddd;;
-  color: black;
+  color: black !important;
+}
+.main-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition-delay: var(--transition-delay);
 }
 
 section {
@@ -71,5 +96,5 @@ section {
   margin: 8px 5px;
   border: none;
   padding: 10px;
-  color: #000000;
+  color: var(--nav-bar-text-color);
 }

@@ -10,6 +10,7 @@
   padding: 20px;
   cursor: pointer;
   min-width: 25vw;
+  background-color: var(--card-color);
 }
 
 .spread {
@@ -44,7 +45,7 @@
 }
 
 .bus-icon {
-  color: #6b99e1;
+  color: #a6a6a6;
   size: 21px;
   font-size: 60px;
   margin-bottom: 5px;

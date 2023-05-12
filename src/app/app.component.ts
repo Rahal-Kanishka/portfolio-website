@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'portfolio-website';
+  public darkTheme = false;
+
+  constructor(){}
+
 
   ngOnInit(): void {
     this.selectorFunction();
+  }
+
+  toggleDarkTheme(): void {
+    document.body.classList.toggle('dark');
+    this.darkTheme = !this.darkTheme;
   }
 
   scroll(el: HTMLElement) {

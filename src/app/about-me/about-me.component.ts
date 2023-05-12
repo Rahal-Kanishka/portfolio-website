@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
 declare var anime: any;
 
 
@@ -6,7 +7,8 @@ declare var anime: any;
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss']
+  styleUrls: ['./about-me.component.scss', '../app.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AboutMeComponent implements OnInit {
 

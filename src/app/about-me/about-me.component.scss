@@ -14,12 +14,6 @@
   z-index: 1;
 }
 
-.image:hover {
-  transform: scale(1.1);
-  transition: 0.7s;
-  z-index: 3;
-}
-
 .image:hover:after {
   transform: scale(1);
   transition: 0.7s ease;
@@ -43,6 +37,15 @@
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition-delay: var(--transition-delay);
+}
+
+.image:hover, .image:focus {
+  transform: scale(1.1);
 }
 
 .general-row {
