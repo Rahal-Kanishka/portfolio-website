@@ -1,0 +1,43 @@
+.image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 1s ease;
+}
+
+.portfolio-image {
+  display: flex;
+  justify-content: center;
+  ransition: transform 3s ease;
+}
+
+.loaded {
+  transform: scale(1.05);
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+i {
+  font-size: 30px;
+  color: var(--text-color);
+  transition: 0.5s ease;
+}
+
+i:hover {
+  transform: scale(1.1);
+}
+
+.image-detail {
+  height: 32vw;
+}
+
