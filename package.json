@@ -1,6 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "0.0.0",
+  "description": "portfolio website",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

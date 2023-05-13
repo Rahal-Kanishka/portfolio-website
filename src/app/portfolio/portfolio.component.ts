@@ -16,7 +16,12 @@ export class PortfolioComponent implements OnInit {
   }
 
   public openProjectDetailModal() {
-    this.dialog.open(BusPlatformModalComponent);
+    this.dialog.open(BusPlatformModalComponent, {
+      height: '70%',
+      width: '80%',
+      ariaLabel: 'label'
+    }
+      );
 
   }
 
