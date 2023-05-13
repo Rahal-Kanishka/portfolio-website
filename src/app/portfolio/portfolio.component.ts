@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
 import { BusPlatformModalComponent } from "./bus-platform-modal/bus-platform-modal.component";
+import { ZeroRiskModalComponent } from "./zero-risk-modal/zero-risk-modal.component";
 
 @Component({
   selector: 'app-portfolio',
@@ -15,9 +16,19 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public openProjectDetailModal() {
+  public openBusProjectDetailModal() {
     this.dialog.open(BusPlatformModalComponent, {
       height: '70%',
+      width: '80%',
+      ariaLabel: 'label'
+    }
+      );
+
+  }
+
+  public openZeroRiskDetailModal() {
+    this.dialog.open(ZeroRiskModalComponent, {
+      height: '80%',
       width: '80%',
       ariaLabel: 'label'
     }

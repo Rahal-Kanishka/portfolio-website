@@ -12,6 +12,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MatDialogModule } from "@angular/material/dialog";
 import { BusPlatformModalComponent } from './portfolio/bus-platform-modal/bus-platform-modal.component';
 import { EducationComponent } from './education/education.component';
+import { ZeroRiskModalComponent } from './portfolio/zero-risk-modal/zero-risk-modal.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EducationComponent } from './education/education.component';
     ExperienceComponent,
     PortfolioComponent,
     BusPlatformModalComponent,
-    EducationComponent
+    EducationComponent,
+    ZeroRiskModalComponent
   ],
   imports: [
     BrowserModule,
