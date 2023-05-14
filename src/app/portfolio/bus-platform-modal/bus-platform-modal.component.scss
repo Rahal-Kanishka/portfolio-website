@@ -7,16 +7,7 @@
   transition: 1s ease;
 }
 
-.portfolio-image {
-  display: flex;
-  justify-content: center;
-  ransition: transform 3s ease;
-}
 
-.loaded {
-  transform: scale(1.05);
-
-}
 
 a:link {
   text-decoration: none;
@@ -36,4 +27,42 @@ i {
 i:hover {
   transform: scale(1.1);
 }
+
+
+
+.slider {
+  height: 36em;
+  overflow: hidden; /* hide any overflow content */
+  position: relative; /* set the position to relative for child elements */
+}
+
+.slider > * {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  animation: 12s autoplay infinite ease;
+}
+
+@keyframes autoplay {
+  0% {top: 100%}
+  10% {top: 7%}
+  33.33% {top: 7%}
+  37.33% {top: -100%}
+  100% {top: -100%}
+}
+
+.slider > *:nth-child(1) {animation-delay: 0s}
+.slider > *:nth-child(2) {animation-delay: 4s}
+.slider > *:nth-child(3) {animation-delay: 8s}
+.slider > *:nth-child(4) {animation-delay: 12s}
+
+
+.cdk-overlay-container {
+  z-index: 9999 !important;
+}
+
+.slider-image {
+  box-shadow: 10px 5px 5px #777;
+}
+
 
