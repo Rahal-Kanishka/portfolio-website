@@ -16,6 +16,7 @@ body {
   --nav-bar-button-color: #ddd;
   --nav-bar-text-color: var(--text-color);
   --transition-delay: 1s ease;
+  --box-shadow-color: #777;
 }
 
 body.dark {
@@ -24,6 +25,7 @@ body.dark {
   --text-color: white;
   --nav-bar-button-color: lightblue;
   --nav-bar-text-color: lightgrey;
+  --box-shadow-color: #6a7580;
 }
 
 /*assign to property*/

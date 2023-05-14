@@ -19,11 +19,10 @@ export class PortfolioComponent implements OnInit {
 
   public openBusProjectDetailModal() {
     this.dialog.open(BusPlatformModalComponent, {
-      height: '70%',
+      height: '80%',
       width: '80%',
-      ariaLabel: 'label'
-    }
-      );
+      panelClass: 'my-custom-dialog-class'
+    });
 
   }
 
@@ -31,7 +30,7 @@ export class PortfolioComponent implements OnInit {
     this.dialog.open(ZeroRiskModalComponent, {
       height: '80%',
       width: '80%',
-      ariaLabel: 'label'
+      panelClass: 'my-custom-dialog-class'
     }
       );
 
@@ -40,7 +39,8 @@ export class PortfolioComponent implements OnInit {
   public openMapGeneralizationModal() {
     this.dialog.open(MapGeneralizationModalComponent, {
       height: '80%',
-      width: '80%'
+      width: '80%',
+      panelClass: 'my-custom-dialog-class'
     }
       );
 

@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   border: darkgray;
-  box-shadow: 5px 4px 5px rgba(0,0,0,0.4);
-  margin:  10px;
+  box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.4);
+  margin: 10px;
   padding: 20px;
   cursor: pointer;
   min-width: 25vw;
@@ -58,3 +58,9 @@
   margin-bottom: 5px;
 }
 
+::ng-deep .my-custom-dialog-class {
+  .mat-dialog-container {
+    background-color: var(--background-color) !important;
+    color: var(--text-color);
+  }
+}
