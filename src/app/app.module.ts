@@ -13,6 +13,7 @@ import { MatDialogModule } from "@angular/material/dialog";
 import { BusPlatformModalComponent } from './portfolio/bus-platform-modal/bus-platform-modal.component';
 import { EducationComponent } from './education/education.component';
 import { ZeroRiskModalComponent } from './portfolio/zero-risk-modal/zero-risk-modal.component';
+import { MapGeneralizationModalComponent } from './portfolio/map-generalization-modal/map-generalization-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ZeroRiskModalComponent } from './portfolio/zero-risk-modal/zero-risk-mo
     PortfolioComponent,
     BusPlatformModalComponent,
     EducationComponent,
-    ZeroRiskModalComponent
+    ZeroRiskModalComponent,
+    MapGeneralizationModalComponent
   ],
   imports: [
     BrowserModule,

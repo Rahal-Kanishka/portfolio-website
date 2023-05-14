@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
 import { BusPlatformModalComponent } from "./bus-platform-modal/bus-platform-modal.component";
 import { ZeroRiskModalComponent } from "./zero-risk-modal/zero-risk-modal.component";
+import { MapGeneralizationModalComponent } from "./map-generalization-modal/map-generalization-modal.component";
 
 @Component({
   selector: 'app-portfolio',
@@ -31,6 +32,15 @@ export class PortfolioComponent implements OnInit {
       height: '80%',
       width: '80%',
       ariaLabel: 'label'
+    }
+      );
+
+  }
+
+  public openMapGeneralizationModal() {
+    this.dialog.open(MapGeneralizationModalComponent, {
+      height: '80%',
+      width: '80%'
     }
       );
 
