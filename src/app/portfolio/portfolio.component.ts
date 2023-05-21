@@ -38,7 +38,7 @@ export class PortfolioComponent implements OnInit {
 
   public openMapGeneralizationModal() {
     this.dialog.open(MapGeneralizationModalComponent, {
-      height: '80%',
+      height: '90%',
       width: '80%',
       panelClass: 'my-custom-dialog-class'
     }
