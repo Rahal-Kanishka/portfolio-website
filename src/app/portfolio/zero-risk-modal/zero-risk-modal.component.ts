@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-zero-risk-modal',
   templateUrl: './zero-risk-modal.component.html',
-  styleUrls: ['./zero-risk-modal.component.scss']
+  styleUrls: ['./zero-risk-modal.component.scss', '../../app.component.scss']
 })
 export class ZeroRiskModalComponent implements OnInit {
   private count = 0;

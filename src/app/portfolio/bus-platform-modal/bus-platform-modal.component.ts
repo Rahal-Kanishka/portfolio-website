@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-bus-platform-modal',
   templateUrl: './bus-platform-modal.component.html',
-  styleUrls: ['./bus-platform-modal.component.scss']
+  styleUrls: ['./bus-platform-modal.component.scss', '../../app.component.scss']
 })
 export class BusPlatformModalComponent implements OnInit {
   private count = 0;

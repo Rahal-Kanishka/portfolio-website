@@ -1,9 +1,3 @@
-
-.heading-section {
-  display: flex;
-  justify-content: center;
-}
-
 .menu-bar {
   position: sticky;
   position: -webkit-sticky;
@@ -147,5 +141,22 @@ footer {
 
   .animation-text {
     font-size: 250%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  // to obtain less space
+  .heading-section {
+    height: 170px;
+  }
+
+  //bring heading and image bit closer towards top
+  #about-me {
+    align-items: flex-start;
+  }
+
+  .slider {
+    height: 90vw;
   }
 }
