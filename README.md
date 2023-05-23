@@ -2,14 +2,14 @@
 
 Access the Website on [Rahal Danthanarayana](https://www.rahalkanishka.com)
 
-##Deployed On
+## Deployed On
 
 AWS S3
 
-##Content Delivery Network
+## Content Delivery Network
 
 AWS CloudFront
 
-##Written On
+## Written On
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
