@@ -2,28 +2,32 @@
 
   <div class="col-12 col-md-5">
     <div class="further-hidden experience-card">
-      <div class="work-card" [ngStyle]="{'background-color': selected == 1 ? 'darkgray' : null}"
-           (click)="selected = 1">
-        <div class="">12/2022 - Present</div>
+      <div class="work-card" (click)="selected = 1" [ngStyle]="{'background-color': selected == 1 ? 'darkgray' : null}">
+        <div class="">01/2024 - Present</div>
+        <div class="fw-bold">Graduate Student</div>
+        <div class="">Towson University, Maryland, USA</div>
+      </div>
+      <div class="work-card" (click)="selected = 2" [ngStyle]="{'background-color': selected == 2 ? 'darkgray' : null}" >
+        <div class="">12/2022 - 08/2023</div>
         <div class="fw-bold">Associate Tech Lead</div>
         <div class="">Softcodeit Solutions (Pvt) LTD</div>
       </div>
-      <div class="work-card" (click)="selected = 2" [ngStyle]="{'background-color': selected == 2 ? 'darkgray' : null}">
+      <div class="work-card" (click)="selected = 3" [ngStyle]="{'background-color': selected == 3 ? 'darkgray' : null}">
         <div class="">10/2020 - 12/2022</div>
         <div class="fw-bold">Software Engineer</div>
         <div class="">Softcodeit Solutions (Pvt) LTD</div>
       </div>
-      <div class="work-card" (click)="selected = 3" [ngStyle]="{'background-color': selected == 3 ? 'darkgray' : null}">
+      <div class="work-card" (click)="selected = 4" [ngStyle]="{'background-color': selected == 4 ? 'darkgray' : null}">
         <div class="">10/2019 - 10/2020</div>
         <div class="fw-bold">Senior Software Engineer</div>
         <div class="">Codegen International (Pvt) LTD</div>
       </div>
-      <div class="work-card" (click)="selected = 4" [ngStyle]="{'background-color': selected == 4 ? 'darkgray' : null}">
+      <div class="work-card" (click)="selected = 5" [ngStyle]="{'background-color': selected == 5 ? 'darkgray' : null}">
         <div class="">06/2017 - 10/2019</div>
         <div class="fw-bold">Software Engineer</div>
         <div class="">Global Trading Network</div>
       </div>
-      <div class="work-card" (click)="selected = 5" [ngStyle]="{'background-color': selected == 5 ? 'darkgray' : null}">
+      <div class="work-card" (click)="selected = 6" [ngStyle]="{'background-color': selected == 6 ? 'darkgray' : null}">
         <div class="">03/2014 - 09/2014</div>
         <div class="fw-bold">Software Engineer Trainee</div>
         <div class="">Codegen International (Pvt) LTD</div>
@@ -33,6 +37,19 @@
   <div class="further-hidden col-12 col-md-6">
     <ng-container [ngSwitch]="selected">
       <ng-container *ngSwitchCase=1>
+        <div class="atl">
+          <div class="badge-row" >
+            <span class="work-badge">Angular</span>
+            <span class="work-badge">Python</span>
+            <span class="work-badge">Panda</span>
+            <span class="work-badge">Jupyter Notebook</span>
+            <span class="work-badge">MySql</span>
+            <span class="work-badge">MacOs</span>
+          </div>
+          <div class="exp-desc"><p>Master's in Computer Science Specialized in Data Science </p></div>
+        </div>
+      </ng-container>
+      <ng-container *ngSwitchCase=2>
         <div class="atl">
           <div class="badge-row" >
             <span class="work-badge">Angular</span>
@@ -52,7 +69,7 @@
             <p>&#9642; Mentored new team members</p></div>
         </div>
       </ng-container>
-      <ng-container *ngSwitchCase=2>
+      <ng-container *ngSwitchCase=3>
         <div class="badge-row" >
           <span class="work-badge">Angular</span>
           <span class="work-badge">EmberJs</span>
@@ -69,7 +86,7 @@
           <p>&#9642; Mentored new team members</p>
         </div>
       </ng-container>
-      <ng-container *ngSwitchCase=3>
+      <ng-container *ngSwitchCase=4>
         <div class="badge-row">
           <span class="work-badge">Material</span>
           <span class="work-badge">Angular</span>
@@ -88,7 +105,7 @@
           <p>&#9642; Front-end code evaluation using SonarQube </p>
         </div>
       </ng-container>
-      <ng-container *ngSwitchCase=4>
+      <ng-container *ngSwitchCase=5>
         <div class=""> <!--GTN-->
           <div class="badge-row">
             <span class="work-badge">Encryption</span>
@@ -115,7 +132,7 @@
 
         </div>
       </ng-container>
-      <ng-container *ngSwitchCase=5>
+      <ng-container *ngSwitchCase=6>
         <div class="badge-row">
           <span class="work-badge">Material</span>
           <span class="work-badge">Angular</span>
