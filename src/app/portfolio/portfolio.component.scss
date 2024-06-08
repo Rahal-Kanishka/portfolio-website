@@ -9,8 +9,14 @@
   margin: 10px;
   padding: 20px;
   cursor: pointer;
-  min-width: 25vw;
+  min-width: 15vw;
   background-color: var(--card-color);
+}
+
+.card-detail:hover {
+  background-color: var(--card-color-hover);
+  transition-delay: 50ms !important;
+  scale: 1.1;
 }
 
 .spread {
@@ -43,6 +49,15 @@
     padding-top: 2px;
   }
 }
+
+// make card larger only for the larger screens, so smaller screen height will be automatic
+@media screen and (min-width: 600px){
+  .card-detail {
+    height: 45vh;
+  }
+}
+
+
 
 .bus-icon {
   color: #a6a6a6;

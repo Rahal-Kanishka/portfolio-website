@@ -3,6 +3,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { BusPlatformModalComponent } from "./bus-platform-modal/bus-platform-modal.component";
 import { ZeroRiskModalComponent } from "./zero-risk-modal/zero-risk-modal.component";
 import { MapGeneralizationModalComponent } from "./map-generalization-modal/map-generalization-modal.component";
+import {IntellichefModalComponent} from "./intellichef-modal/intellichef-modal.component";
 
 @Component({
   selector: 'app-portfolio',
@@ -38,6 +39,15 @@ export class PortfolioComponent implements OnInit {
 
   public openMapGeneralizationModal() {
     this.dialog.open(MapGeneralizationModalComponent, {
+      height: '90%',
+      width: '80%',
+      panelClass: 'my-custom-dialog-class'
+    }
+      );
+
+  }
+  public openIntellichefModal() {
+    this.dialog.open(IntellichefModalComponent, {
       height: '90%',
       width: '80%',
       panelClass: 'my-custom-dialog-class'
