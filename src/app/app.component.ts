@@ -70,6 +70,9 @@ export class AppComponent implements OnInit{
     const furtherHiddenElements = document.querySelectorAll('.further-hidden');
     furtherHiddenElements.forEach((el) => observer.observe(el));
 
+    const furtherHiddenRightElements = document.querySelectorAll('.further-hidden-right');
+    furtherHiddenRightElements.forEach((el) => observer.observe(el));
+
     //sections
     const sectionElements = document.querySelectorAll('section');
     sectionElements.forEach((el) => sectionObserver.observe(el));

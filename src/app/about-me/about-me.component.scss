@@ -50,14 +50,22 @@
 //  transform: scale(1.1);
 //}
 
-.social-row {
+.social-contact-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
 
-.social-row a {
+.social-contact-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.social-contact-row a {
   margin: 10px;
 }
 
