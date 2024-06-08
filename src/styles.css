@@ -17,11 +17,13 @@ body {
   --nav-bar-text-color: var(--text-color);
   --transition-delay: 1s ease;
   --box-shadow-color: #777;
+  --card-color-hover: #2a639d;
 }
 
 body.dark {
   --background-color: #333;
   --card-color: #2a639d;
+  --card-color-hover: white;
   --text-color: white;
   --nav-bar-button-color: lightblue;
   --nav-bar-text-color: lightgrey;
