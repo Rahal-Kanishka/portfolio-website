@@ -14,6 +14,7 @@ import { BusPlatformModalComponent } from './portfolio/bus-platform-modal/bus-pl
 import { EducationComponent } from './education/education.component';
 import { ZeroRiskModalComponent } from './portfolio/zero-risk-modal/zero-risk-modal.component';
 import { MapGeneralizationModalComponent } from './portfolio/map-generalization-modal/map-generalization-modal.component';
+import { IntellichefModalComponent } from './portfolio/intellichef-modal/intellichef-modal.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MapGeneralizationModalComponent } from './portfolio/map-generalization-
     BusPlatformModalComponent,
     EducationComponent,
     ZeroRiskModalComponent,
-    MapGeneralizationModalComponent
+    MapGeneralizationModalComponent,
+    IntellichefModalComponent
   ],
   imports: [
     BrowserModule,
