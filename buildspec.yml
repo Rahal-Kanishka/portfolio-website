@@ -5,15 +5,15 @@ env:
 phases:
   install:
     runtime-versions:
-      nodejs: 12.11.1
+      nodejs: 12.14.1
     commands:
       - echo install process started
       - node -v
-      - npm install && npm install -g @angular/cli
+      - npm install
   build:
     commands:
       - echo build process started now
-      - ng build --configuration=production
+      - node_modules/.bin/ng build --configuration=production
   post_build:
     commands:
       - echo build process finished, we should upload to S3 now
