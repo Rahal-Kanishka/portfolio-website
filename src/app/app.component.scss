@@ -69,7 +69,7 @@ section {
   min-height: 100vh;
   margin: 0 10px;
   scroll-margin-top: 80px;
-  //overflow: hidden;
+  overflow: hidden;
 }
 
 .hidden {
@@ -86,7 +86,7 @@ section {
 .further-hidden-right {
   opacity: 0;
   transition: all 2.5s;
-  transform: translateX(110%);
+  transform: translateX(100%);
 }
 
 .show {
