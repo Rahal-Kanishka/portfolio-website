@@ -2,11 +2,13 @@
   "name": "portfolio-website",
   "version": "0.0.0",
   "description": "portfolio website",
+  "author": "Rahal Danthanarayana",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "start": "node_modules/.bin/ng serve",
+    "run": "node_modules/.bin/ng serve",
+    "build": "node_modules/.bin/ng build --configuration=production",
+    "watch": "node_modules/.bin/ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
