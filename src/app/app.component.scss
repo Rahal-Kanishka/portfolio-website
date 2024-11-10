@@ -45,6 +45,19 @@ button {
 
 }
 
+.language-and-theme {
+  display: flex;
+  flex-direction: row;
+  div {
+    padding: 5px;
+  }
+}
+
+.language-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .theme-icon {
   display: flex;
   flex-direction: column;

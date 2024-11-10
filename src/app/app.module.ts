@@ -15,6 +15,13 @@ import { EducationComponent } from './education/education.component';
 import { ZeroRiskModalComponent } from './portfolio/zero-risk-modal/zero-risk-modal.component';
 import { MapGeneralizationModalComponent } from './portfolio/map-generalization-modal/map-generalization-modal.component';
 import { IntellichefModalComponent } from './portfolio/intellichef-modal/intellichef-modal.component';
+import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+
+export function createTranslateLoader(http: HttpClient){
+  return new TranslateHttpLoader(http, './assets/translations/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -34,7 +41,17 @@ import { IntellichefModalComponent } from './portfolio/intellichef-modal/intelli
     AppRoutingModule,
     BrowserAnimationsModule,
     TypingAnimationModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule,
+    TranslateModule.forRoot(
+      {
+        defaultLanguage: 'en',
+        loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: [HttpClient]
+        }
+      })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'portfolio-website';
   public darkTheme = false;
-
-  constructor(){}
+  selected = 'option2';
+  constructor(public translateService: TranslateService){
+    this.translateService.use('en');
+  }
 
 
   ngOnInit(): void {
