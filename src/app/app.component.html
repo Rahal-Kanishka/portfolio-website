@@ -9,12 +9,13 @@
     </div>
 
     <div class="language-and-theme">
-      <div class="language-select">
-        <select class="dropdown" (change)="onOptionSelected($event)">
-         <option value="{{language?.code}}" *ngFor="let language of languageList">
-           {{language?.name}}
-         </option>
+      <div class="custom-select-wrapper">
+        <select class="custom-select" (change)="onOptionSelected($event)">
+          <option value="{{language?.code}}" *ngFor="let language of languageList">
+            {{language?.name}}
+          </option>
         </select>
+        <span class="custom-arrow">▼</span>
       </div>
       <div class="theme-icon">
       <ng-container *ngIf="!darkTheme; else themeButtonElsePart">

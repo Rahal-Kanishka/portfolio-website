@@ -53,15 +53,38 @@ button {
   }
 }
 
-.language-select {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .theme-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--background-color);
+  border: none;
+  padding-right: 25px; /* Add space for the custom arrow */
+  font-size: 22px;
+}
+
+/* Position and style the custom arrow */
+.custom-select-wrapper {
+  position: relative;
+  display: flex;
+}
+
+
+
+.custom-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 14px;
+  color: var(--text-color); /* Change this color for the arrow */
 }
 
 .select {
@@ -164,9 +187,16 @@ select:focus {
   outline: none;              /* Remove outline on focus */
   border-color: #0073e6;      /* Border color on focus */
 }
-.dropdown {
-  cursor: pointer;
-  border-radius: 10px;
+
+.original-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f0f0f0;
+  padding-right: 30px;
+  font-size: 16px;
+  display: flex;
+  align-content: center;
 }
 
 // to handle space issue when screen size is small
