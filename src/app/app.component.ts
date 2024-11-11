@@ -10,9 +10,9 @@ export class AppComponent implements OnInit{
   title = 'portfolio-website';
   public darkTheme = false;
   languageList = [
-    {name: "English", code: "en"},
-    {name: "German", code: "de"},
-    {name: "Spanish", code: "es"},
+    {name: "🇺🇸", code: "en"},
+    {name: "🇩🇪", code: "de"},
+    {name: "🇪🇸", code: "es"},
   ]
   constructor(public translateService: TranslateService){
     this.translateService.use('en');

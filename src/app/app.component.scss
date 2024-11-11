@@ -157,15 +157,16 @@ select {
   font-size: 16px;            /* Font size */
   padding: 8px 12px;          /* Padding */
   border: 1px solid #ccc;     /* Border styling */
-  border-radius: 4px;         /* Rounded corners */
-  width: 200px;               /* Width of the select box */
-  appearance: none;           /* Remove default styling */
 }
 
-/* Optional: Style the arrow */
+
 select:focus {
   outline: none;              /* Remove outline on focus */
   border-color: #0073e6;      /* Border color on focus */
+}
+.dropdown {
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 // to handle space issue when screen size is small
