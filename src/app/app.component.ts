@@ -9,7 +9,11 @@ import { TranslateService } from "@ngx-translate/core";
 export class AppComponent implements OnInit{
   title = 'portfolio-website';
   public darkTheme = false;
-  selected = 'option2';
+  languageList = [
+    {name: "English", code: "en"},
+    {name: "German", code: "de"},
+    {name: "Spanish", code: "es"},
+  ]
   constructor(public translateService: TranslateService){
     this.translateService.use('en');
   }
@@ -80,5 +84,11 @@ export class AppComponent implements OnInit{
     const sectionElements = document.querySelectorAll('section');
     sectionElements.forEach((el) => sectionObserver.observe(el));
 
+  }
+
+  onOptionSelected($event: Event) {
+    const selectedValue = ($event.target as HTMLSelectElement).value;
+    console.log('Selected option:', selectedValue);
+    this.translateService.use(selectedValue ? selectedValue : 'en');
   }
 }
