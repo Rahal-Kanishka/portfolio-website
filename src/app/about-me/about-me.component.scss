@@ -24,13 +24,16 @@
 .content-row {
   display: flex;
   flex-direction: row;
-  font-size: xx-large;
+  font-size: xxx-large;
+  font-family:  "Comic Sans MS", cursive;;
 }
 
 .animation-text {
   left-margin: 5px;
   font-size: 300%;
   font-weight: bold;
+  font-family:  "Comic Sans MS", cursive;
+
 }
 
 .image {
