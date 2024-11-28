@@ -7,6 +7,13 @@
   text-align: start;
 }
 
+.education-content img {
+  width: auto; /* Ensures the image scales to fit the container */
+  height: 80%; /* Maintains the aspect ratio */
+  object-fit: cover; /* Crops the image to fit within the container */
+  max-width: 350px; /* Adjust to the desired height of the carousel */
+}
+
 .text-content {
   text-align: start;
   width: 100%;
@@ -37,8 +44,8 @@
 }
 
 @keyframes autoplay {
-  0% {left: 100%}
-  33.33% {left: 0}
+  0% {left: 200%}
+  33.33% {left: 5%}
   40.00% {left: -100%}
   50.00% {left: -200%}
   100% {left: -250%}
@@ -49,11 +56,25 @@
 .slider > *:nth-child(3) {animation-delay: 11s}
 
 @media screen and (max-width: 600px) {
-  .edu-image {
-    width: 50%;
-  }
 
   .slider {
-    height: 30em;
+    height: 30em; // for smaller screen
+  }
+
+  .text-content {
+    padding-left: 15px; // to fix issue of bullets points are visible before start of animation in smaller screen
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .text-content {
+    font-size: 20px; /*to make course list larger in larger screen */
+  }
+
+  .education-content img {
+    width: 100%; /* Ensures the image scales to fit the container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Crops the image to fit within the container */
   }
 }

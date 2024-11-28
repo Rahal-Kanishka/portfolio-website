@@ -1,10 +1,10 @@
 <div class="slider">
   <ng-container *ngFor="let education of educationList">
-    <div class="regular-row">
-      <div class="col education-content">
-        <img class="edu-image" src="{{education?.image}}" alt="{{education?.location}}">
+    <div class="row">
+      <div class="col-sm-8 education-content">
+        <img class="" src="{{education?.image}}" alt="{{education?.location}}">
       </div>
-      <div class="col education-content">
+      <div class="col-sm-4">
         <div class="text-content">
           <h2> {{ education?.institute }}</h2>
           <h2> {{ education?.location }}</h2>
