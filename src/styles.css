@@ -13,6 +13,7 @@ body {
   --background-color: white;
   --card-color: white;
   --text-color: black;
+  --image-color: white;
   --nav-bar-button-color: #ddd;
   --nav-bar-text-color: var(--text-color);
   --transition-delay: 1s ease;
@@ -25,6 +26,7 @@ body.dark {
   --card-color: #2a639d;
   --card-color-hover: white;
   --text-color: white;
+  --image-color: white;
   --nav-bar-button-color: lightblue;
   --nav-bar-text-color: lightgrey;
   --box-shadow-color: #6a7580;
@@ -34,4 +36,9 @@ body.dark {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+.regular-row {
+  display: flex;
+  flex-direction: row;
 }
