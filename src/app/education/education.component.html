@@ -1,18 +1,25 @@
-<div class="edu-card">
-  <i class="fa-solid fa-user-graduate education-icon"></i>
-  <h2> University of Moratuwa, Sri Lanka</h2>
-  <h3> Bsc (Hons) In Information Technology (2017)</h3>
+<div class="slider">
+  <ng-container *ngFor="let education of educationList">
+    <div class="regular-row">
+      <div class="col education-content">
+        <img class="edu-image" src="{{education?.image}}" alt="{{education?.location}}">
+      </div>
+      <div class="col education-content">
+        <div class="text-content">
+          <h2> {{ education?.institute }}</h2>
+          <h2> {{ education?.location }}</h2>
+          <h3> {{ education?.degree }}</h3>
+          <h3> {{ education?.year }}</h3>
+        </div>
+        <ng-container *ngIf="education && education.courses && education.courses.length > 0">
+          <div class="text-content">
+            <ng-container *ngFor="let course of education?.courses">
+              <li style="text-align: start;">{{ course }}</li>
+            </ng-container>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </ng-container>
 </div>
 
-<div class="edu-card-list">
-  <ul>
-    <li>Web Development</li>
-    <li>Enterprise Application Development</li>
-    <li>Database Management Systems</li>
-    <li>Big Data Analytics</li>
-    <li>Deep Learning Architectures</li>
-    <li>Data Mining & Data Warehousing</li>
-    <li>Artificial Neural Networks & Evolutionary Computing</li>
-    <li>Automata Theory</li>
-  </ul>
-</div>

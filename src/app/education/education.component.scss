@@ -1,34 +1,59 @@
-.education-icon {
-  font-size: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 10px;
-}
 
-.edu-card {
-  border-radius: 9px;
+.education-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border: darkgray;
-  box-shadow: 5px 4px 5px rgba(0,0,0,0.4);
-  margin:  10px;
-  padding: 20px;
-  min-width: 25vw;
-}
-
-.edu-card-list {
-  border-radius: 9px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border: darkgray;
-  box-shadow: 5px 4px 5px rgba(0,0,0,0.4);
-  margin:  10px;
-  padding: 20px;
-  min-width: 25vw;
   text-align: start;
+}
+
+.text-content {
+  text-align: start;
+  width: 100%;
+}
+.edu-image {
+  width: 50%;
+  background-color: var(--image-color);
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider {
+  height: 45em;
+}
+
+.slider > * {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  animation: 17s autoplay infinite ease;
+  width: 100%; /* Ensure child spans full width */
+  //height: 100%; /* Ensure child spans full height */
+  //background-color: lightblue; /* Add a visible background for testing */
+}
+
+@keyframes autoplay {
+  0% {left: 100%}
+  33.33% {left: 0}
+  40.00% {left: -100%}
+  50.00% {left: -200%}
+  100% {left: -250%}
+}
+
+.slider > *:nth-child(1) {animation-delay: 0s}
+.slider > *:nth-child(2) {animation-delay: 6s}
+.slider > *:nth-child(3) {animation-delay: 11s}
+
+@media screen and (max-width: 600px) {
+  .edu-image {
+    width: 50%;
+  }
+
+  .slider {
+    height: 30em;
+  }
 }
