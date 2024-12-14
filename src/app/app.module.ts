@@ -18,6 +18,7 @@ import { IntellichefModalComponent } from './portfolio/intellichef-modal/intelli
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { WastedumpComponent } from './portfolio/wastedump/wastedump.component';
 
 export function createTranslateLoader(http: HttpClient){
   return new TranslateHttpLoader(http, './assets/translations/i18n/', '.json');
@@ -34,7 +35,8 @@ export function createTranslateLoader(http: HttpClient){
     EducationComponent,
     ZeroRiskModalComponent,
     MapGeneralizationModalComponent,
-    IntellichefModalComponent
+    IntellichefModalComponent,
+    WastedumpComponent
   ],
   imports: [
     BrowserModule,
