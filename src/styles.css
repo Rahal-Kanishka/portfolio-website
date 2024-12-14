@@ -22,7 +22,7 @@ body {
 }
 
 body.dark {
-  --background-color: #333;
+  --background-color: #2a353a;
   --card-color: #2a639d;
   --card-color-hover: white;
   --text-color: white;
