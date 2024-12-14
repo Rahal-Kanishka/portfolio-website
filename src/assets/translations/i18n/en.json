@@ -5,5 +5,7 @@
   "cloud_engineer": "Cloud Engineer",
   "data_scientist": "Data Scientist",
   "full_stack_dev": "Full Stack Developer",
-  "waste_dump_analysis": "Waster Dump Analysis"
+  "waste_dump_analysis": "Waste Dump Analysis",
+  "map_generalization": "Map Generalization",
+  "bus_transit": "Bus Transit Platform"
 }

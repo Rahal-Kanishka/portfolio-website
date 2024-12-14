@@ -10,5 +10,7 @@
   "cloud_engineer": "Cloud-Ingenieur",
   "data_scientist": "Datenwissenschaftler",
   "full_stack_dev": "Full-Stack-Entwickler",
-  "waste_dump_analysis": "Analyse der Mülldeponie"
+  "waste_dump_analysis": "Analyse der Mülldeponie",
+  "map_generalization": "Karten-Verallgemeinerung",
+  "bus_transit": "Bus-Verkehrs-Plattform"
 }

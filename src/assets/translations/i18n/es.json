@@ -1,7 +1,7 @@
 {
   "about-me": "Acerca de mí",
   "Experience": "Experiencia",
-  "Portfolio": "Portfolio",
+  "Portfolio": "Cartera",
   "Certifications": "Certificaciones",
   "Education": "Educación",
   "hello": "Hola",
@@ -10,5 +10,7 @@
   "cloud_engineer": "Ingeniero en nube",
   "data_scientist": "Científico de datos",
   "full_stack_dev": "Desarrollador de pila completa",
-  "waste_dump_analysis": "análisis de vertedero de residuos"
+  "waste_dump_analysis": "Análisis de vertedero de residuos",
+  "map_generalization": "Generalización de mapas",
+  "bus_transit": "Plataforma de tránsito de autobuses"
 }
