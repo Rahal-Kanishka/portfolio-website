@@ -4,6 +4,7 @@ import { BusPlatformModalComponent } from "./bus-platform-modal/bus-platform-mod
 import { ZeroRiskModalComponent } from "./zero-risk-modal/zero-risk-modal.component";
 import { MapGeneralizationModalComponent } from "./map-generalization-modal/map-generalization-modal.component";
 import {IntellichefModalComponent} from "./intellichef-modal/intellichef-modal.component";
+import { WastedumpComponent } from "./wastedump/wastedump.component";
 
 @Component({
   selector: 'app-portfolio',
@@ -56,4 +57,12 @@ export class PortfolioComponent implements OnInit {
 
   }
 
+  openWasteDumpAnalysisModal() {
+    this.dialog.open(WastedumpComponent, {
+        height: '90%',
+        width: '80%',
+        panelClass: 'my-custom-dialog-class'
+      }
+    );
+  }
 }
