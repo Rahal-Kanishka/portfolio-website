@@ -1,21 +1,46 @@
-.image-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  transition: 1s ease;
+.main-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-.portfolio-image {
-  display: flex;
-  justify-content: center;
-  ransition: transform 3s ease;
+.slider {
+  height: 38em;
+  overflow: hidden; /* hide any overflow content */
+  position: relative; /* set the position to relative for child elements */
+  margin-bottom: 5px;
 }
 
-.loaded {
-  transform: scale(1.05);
+.slider > * {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  animation: 8s autoplay infinite ease;
+}
 
+@keyframes autoplay {
+  0% {top: 100%}
+  10% {top: 0}
+  33.33% {top: 0}
+  37.33% {top: -100%}
+  100% {top: -150%}
+}
+
+.slider > *:nth-child(1) {animation-delay: 0s}
+.slider > *:nth-child(2) {animation-delay: 4s}
+
+
+.cdk-overlay-container {
+  z-index: 9999 !important;
+}
+
+.slider-image {
+  box-shadow: 10px 5px 5px var(--box-shadow-color);
+}
+
+.slider-image img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
 }
 
 a:link {
@@ -36,14 +61,3 @@ i {
 i:hover {
   transform: scale(1.1);
 }
-
-.image-detail {
-  height: 32vw;
-}
-
-.slider-image img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-}
-

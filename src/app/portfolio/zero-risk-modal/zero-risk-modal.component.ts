@@ -21,8 +21,8 @@ export class ZeroRiskModalComponent implements OnInit {
   public current_image = this.image_array[0];
 
   ngOnInit(): void {
-    setInterval(() => this.incrementCount(), 3000);
-    this.imageClass = document.getElementsByClassName('image-row')[0];
+    // setInterval(() => this.incrementCount(), 3000);
+    // this.imageClass = document.getElementsByClassName('image-row')[0];
 
   }
 
