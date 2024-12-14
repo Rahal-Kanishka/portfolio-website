@@ -7,14 +7,14 @@
         <ng-container *ngSwitchCase=1>
           <div class="">
             <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
-              Rahal Danthanarayana
+              {{ "Rahal Danthanarayana" | uppercase }}
             </span>
           </div>
         </ng-container>
         <ng-container *ngSwitchCase=2>
           <div class="">
             <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
-            A Full-stack Developer
+              {{ "full_stack_dev" | translate | uppercase }}
             </span>
             <div class="tools">
               <img alt="angular" src="../../assets/tools/angular.png">
@@ -28,7 +28,7 @@
         <div *ngSwitchCase=3>
           <div class="">
             <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
-            A Cloud Engineer
+              {{ "cloud_engineer" | translate | uppercase }}
             </span>
             <div class="tools">
               <img alt="aws" src="../../assets/tools/aws.png">
@@ -40,7 +40,7 @@
         <div *ngSwitchCase=4>
           <div class="">
             <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
-            A Data Scientist
+              {{ "data_scientist" | translate | uppercase }}
             </span>
             <div class="tools">
               <img alt="python" src="../../assets/tools/python.png">
@@ -54,7 +54,7 @@
         <div *ngSwitchCase=5>
           <div class="">
             <span class="animation-text" typingAnimation [typeSpeed]="type_speed" [condition]="start" [startDelay]="type_delay">
-            A Mobile App developer
+              {{ "mobile_developer" | translate | uppercase }}
             </span>
             <div class="tools">
               <img alt="flutter" src="../../assets/tools/flutter.png">

@@ -5,5 +5,10 @@
   "Certifications": "Zertifizierungen",
   "Education": "Ausbildung",
   "hello": "Hallo",
-  "I'm": "Ich bin"
+  "I'm": "Ich bin",
+  "mobile_developer": "Entwickler mobiler Apps",
+  "cloud_engineer": "Cloud-Ingenieur",
+  "data_scientist": "Datenwissenschaftler",
+  "full_stack_dev": "Full-Stack-Entwickler",
+  "waste_dump_analysis": "Analyse der Mülldeponie"
 }

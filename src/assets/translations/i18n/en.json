@@ -1,4 +1,9 @@
 {
   "hello": "Hi",
-  "I'm": "I'm"
+  "I'm": "I'm",
+  "mobile_developer": "Mobile App Developer",
+  "cloud_engineer": "Cloud Engineer",
+  "data_scientist": "Data Scientist",
+  "full_stack_dev": "Full Stack Developer",
+  "waste_dump_analysis": "Waster Dump Analysis"
 }
