@@ -3,14 +3,14 @@
   color: var(--text-color);
 }
 
-.slider {
-  height: 38em;
+.zeroRisk-slider {
+  height: 62vh;
   overflow: hidden; /* hide any overflow content */
   position: relative; /* set the position to relative for child elements */
   margin-bottom: 5px;
 }
 
-.slider > * {
+.zeroRisk-slider > * {
   position: absolute;
   top: 100%;
   left: 0;
@@ -25,8 +25,8 @@
   100% {top: -150%}
 }
 
-.slider > *:nth-child(1) {animation-delay: 0s}
-.slider > *:nth-child(2) {animation-delay: 4s}
+.zeroRisk-slider > *:nth-child(1) {animation-delay: 0s}
+.zeroRisk-slider > *:nth-child(2) {animation-delay: 4s}
 
 
 .cdk-overlay-container {
@@ -40,7 +40,6 @@
 .slider-image img {
   max-width: 100%;
   height: auto;
-  width: auto\9;
 }
 
 a:link {
@@ -60,4 +59,11 @@ i {
 
 i:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+
+  .zeroRisk-slider {
+    height: 20vh;
+  }
 }
