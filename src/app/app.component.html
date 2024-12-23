@@ -10,8 +10,8 @@
 
     <div class="language-and-theme">
       <div class="custom-select-wrapper">
-        <select class="custom-select" (change)="onOptionSelected($event)">
-          <option value="{{language?.code}}" *ngFor="let language of languageList">
+        <select class="custom-select" (change)="onOptionSelected($event)" [(ngModel)]="selectedLanguage">
+          <option [value]="language?.code" *ngFor="let language of languageList">
             {{language?.name}}
           </option>
         </select>

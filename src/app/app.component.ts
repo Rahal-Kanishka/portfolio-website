@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from "@ngx-translate/core";
 
+const LANGUAGE_KEY = 'lang'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,8 +15,15 @@ export class AppComponent implements OnInit{
     {name: "🇩🇪", code: "de"},
     {name: "🇪🇸", code: "es"},
   ]
+  public selectedLanguage: string | null = null
   constructor(public translateService: TranslateService){
-    this.translateService.use('en');
+    this.selectedLanguage = localStorage.getItem(LANGUAGE_KEY);
+    if(!this.selectedLanguage){
+      // set language to english if the language is not selected before
+      this.translateService.use('en');
+    } else {
+      this.translateService.use(this.selectedLanguage);
+    }
   }
 
 
@@ -88,7 +96,7 @@ export class AppComponent implements OnInit{
 
   onOptionSelected($event: Event) {
     const selectedValue = ($event.target as HTMLSelectElement).value;
-    console.log('Selected option:', selectedValue);
     this.translateService.use(selectedValue ? selectedValue : 'en');
+    localStorage.setItem(LANGUAGE_KEY, selectedValue);
   }
 }
