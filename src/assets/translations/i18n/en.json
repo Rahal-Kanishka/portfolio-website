@@ -7,5 +7,13 @@
   "full_stack_dev": "Full Stack Developer",
   "waste_dump_analysis": "Waste Dump Analysis",
   "map_generalization": "Map Generalization",
-  "bus_transit": "Bus Transit Platform"
+  "bus_transit": "Bus Transit Platform",
+  "features": "Features",
+  "technologies": "Technologies",
+  "bus_transit_project": {
+    "seat_reservation": "Seat Reservation",
+    "view_bus_routes": "View Bus Routes",
+    "rate_exp": "Rate the experience",
+    "report_misc": "Report Misconduct"
+  }
 }

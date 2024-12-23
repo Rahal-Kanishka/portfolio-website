@@ -12,5 +12,13 @@
   "full_stack_dev": "Desarrollador de pila completa",
   "waste_dump_analysis": "Análisis de vertedero de residuos",
   "map_generalization": "Generalización de mapas",
-  "bus_transit": "Plataforma de tránsito de autobuses"
+  "bus_transit": "Plataforma de tránsito de autobuses",
+  "features": "Características",
+  "technologies": "tecnologías",
+  "bus_transit_project": {
+    "seat_reservation": "Reserva de asiento",
+    "view_bus_routes": "ver rutas de autobús",
+    "rate_exp": "calificar experiencia",
+    "report_misc": "reportar mala conducta"
+  }
 }

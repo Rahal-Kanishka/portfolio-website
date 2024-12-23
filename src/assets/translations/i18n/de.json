@@ -12,5 +12,13 @@
   "full_stack_dev": "Full-Stack-Entwickler",
   "waste_dump_analysis": "Analyse der Mülldeponie",
   "map_generalization": "Karten-Verallgemeinerung",
-  "bus_transit": "Bus-Verkehrs-Plattform"
+  "bus_transit": "Bus-Verkehrs-Plattform",
+  "features": "Merkmale",
+  "technologies": "Technologien",
+  "bus_transit_project": {
+    "seat_reservation": "Sitzplatzreservierung",
+    "view_bus_routes": "Sehen Sie sich die verfügbaren Buslinien an",
+    "rate_exp": "Bewerten Sie die Erfahrung",
+    "report_misc": "Fehlverhalten melden"
+  }
 }
