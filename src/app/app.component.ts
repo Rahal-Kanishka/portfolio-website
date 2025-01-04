@@ -22,6 +22,7 @@ export class AppComponent implements OnInit{
       // set language to english if the language is not selected before
       this.translateService.use('en');
       this.selectedLanguage = 'en'
+      localStorage.setItem(LANGUAGE_KEY, 'en');
     } else {
       this.translateService.use(this.selectedLanguage);
     }
