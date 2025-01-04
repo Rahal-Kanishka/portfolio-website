@@ -21,6 +21,7 @@ export class AppComponent implements OnInit{
     if(!this.selectedLanguage){
       // set language to english if the language is not selected before
       this.translateService.use('en');
+      this.selectedLanguage = 'en'
     } else {
       this.translateService.use(this.selectedLanguage);
     }
